@@ -1,0 +1,52 @@
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.profileText p {
+  margin: 0.5rem 0;
+}
+
+.hobbySection {
+  margin-top: 2rem;
+}
+
+.subHeading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hobbyList {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hobbyItem {
+  text-align: center;
+}
+
+.hobbyImage {
+  border-radius: 8px;
+}
+
+.hobbyText {
+  margin-top: 0.5rem;
+}
