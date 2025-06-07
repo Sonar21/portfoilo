@@ -9,18 +9,19 @@ export default function AboutPage() {
       <h2 className={styles.heading}>About</h2>
       <div className={styles.about}>
         <p className={styles.text}>
-        こんにちは、私はチーリ・アウンです。見た目だけでなく、使いやすさにもこだわったウェブサイトを作ることが好きな、創造的で細部に注意を払うウェブ開発者です。デザインとテクノロジーの両方に強い関心があり、アイデアをクリーンで効率的なコードで形にする新しい方法を日々探求しています。また、チームワークも大切にしており、協力しながらより良いものを作り上げることにやりがいを感じています。
-      </p>
+          私はティリアウンです。ミャンマーで生まれ、子どもの頃に日本にやってきました。異国の地での生活は簡単ではありませんでしたが、小さな頃からの夢を胸に、ここまで努力を重ねてきました。
+          私の夢は、人の心に届くようなウェブサイトを作ることです。見た目の美しさはもちろん、誰にとっても使いやすく、心地よい体験を届けられるように心がけています。私は、デザインとテクノロジーのどちらにも強い興味を持っており、毎日、新しいアイデアをコードで形にすることに挑戦しています。
+        </p>
 
-      <section className={styles.imageSection}>
-        <Image
-          src="/images/my.jpg"
-          alt="About Image"
-          width={800}
-          height={400}
-          className={styles.image}
-        />
-      </section>
+        <section className={styles.imageSection}>
+          <Image
+            src="/images/my.jpg"
+            alt="About Image"
+            width={800}
+            height={400}
+            className={styles.image}
+          />
+        </section>
       </div>
     </main>
   );
