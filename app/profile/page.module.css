@@ -1,4 +1,4 @@
-.container {
+/* .container {
   max-width: 700px;
   margin: 2rem auto;
   padding: 1rem;
@@ -17,7 +17,7 @@
 }
 
 .profileImage {
-  border-radius: 50%;
+  border-radius: %;
 }
 
 .profileText p {
@@ -49,4 +49,134 @@
 
 .hobbyText {
   margin-top: 0.5rem;
+} */
+/* Container for the whole page */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Headings */
+.heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0070f3;
+  position: relative;
+}
+
+.subHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 3px solid #0070f3;
+  padding-bottom: 0.3rem;
+  max-width: fit-content;
+}
+
+/* Profile section layout */
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Profile image styling */
+.profileImage {
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 112, 243, 0.25);
+  object-fit: cover;
+}
+
+/* Profile text */
+.profileText {
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.profileText p {
+  margin: 0.8rem 0;
+}
+
+/* Hobby section */
+.hobbySection {
+  margin-bottom: 3rem;
+}
+
+/* Hobby list layout */
+.hobbyList {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each hobby card */
+.hobbyItem {
+  max-width: 350px;
+  text-align: center;
+  background-color: #f9faff;
+  border-radius: 12px;
+  padding: 1.5rem 1.2rem 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.hobbyItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 112, 243, 0.25);
+}
+
+/* Hobby images grid inside each hobby */
+.hobbyItem > img,
+.hobbyItem > div > img {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin: 0.3rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+
+.hobbyItem > img:hover,
+.hobbyItem > div > img:hover {
+  transform: scale(1.1);
+}
+
+/* Hobby text */
+.hobbyText {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profileSection {
+    flex-direction: column;
+  }
+
+  .hobbyList {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hobbyItem {
+    max-width: 100%;
+  }
 }

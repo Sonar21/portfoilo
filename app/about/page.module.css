@@ -1,4 +1,4 @@
-.container {
+/* .container {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
@@ -23,4 +23,69 @@
   width: 100%;
   height: auto;
   border-radius: 6px;
+} */
+/* Container for the whole page */
+.container {
+ 
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  
+}
+
+/* Heading style */
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #0070f3;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+
+.about{
+  display: flex;
+}
+/* Paragraph text */
+.text {
+  font-size: 1.2rem;
+  justify-items: flex-start;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+.text:hover{
+  color: #0070f3;
+}
+
+/* Section for image */
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styling */
+.image {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
 }
