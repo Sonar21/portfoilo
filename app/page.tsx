@@ -34,8 +34,12 @@ export default function HomePage() {
           <li>
             <Link href="/strengths">Strengths</Link>
           </li>
+          <li>
+            <Link href="/contact">Contant</Link>
+          </li>
         </ul>
       </nav>
+      
       </div>
       <Image
           src="/images/shuri.jpg"
