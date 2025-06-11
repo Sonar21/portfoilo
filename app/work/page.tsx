@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 
 export default function WorkPage() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id="work">
       <h2 className={styles.heading}>Work</h2>
       <p className={styles.text}>
         ここでは自分がこれまで制作してきたアプリやサイトを紹介します。各作品のサムネイルや簡単な説明文、GitHub リンクを載せましょう。

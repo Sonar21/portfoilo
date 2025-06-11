@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 export default function StrengthsPage() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id="strengths">
       <h2 className={styles.heading}>Strengths</h2>
       <p className={styles.text}>
         Work や Skill がまだ少ない場合は、ここで自分の「強み」を大きくアピールしましょう。

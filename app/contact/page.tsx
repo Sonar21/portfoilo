@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 export default function ContactPage() {
   return (
-    <section className={styles.contactSection}>
+    <section className={styles.contactSection} id="contact">
       <h2 className={styles.contactTitle}>Contact Me</h2>
       <p className={styles.contactDescription}>
         下記フォームよりお気軽にご連絡ください！

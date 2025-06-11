@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 
 export default function ProfilePage() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id="profile">
       <h2 className={styles.heading}>Profile</h2>
       <section className={styles.profileSection}>
         <Image
@@ -16,6 +16,7 @@ export default function ProfilePage() {
         <div className={styles.profileText}>
           <p><strong>名前：</strong>ティリアウン</p>
           <p><strong>年齢：</strong>21歳</p>
+          <p><strong>国籍：</strong>Myanmar</p>
           <p>
             専門学校沖縄ビジネス外語学院 Web プログラミングコースを専攻し、現在はエンジニアを目指して勉強中。
           </p>

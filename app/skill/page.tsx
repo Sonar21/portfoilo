@@ -15,7 +15,7 @@ import styles from "./page.module.css";
 
 export default function SkillPage() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id="skill">
       <h2 className={styles.heading}>Skill</h2>
       <p className={styles.text}>
         これまで勉強した言語や現在学習中の技術を載せましょう。
