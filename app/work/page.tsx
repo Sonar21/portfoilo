@@ -1,29 +1,54 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function WorkPage() {
   return (
     <main className={styles.container} id="work">
-      <h2 className={styles.heading}>Work</h2>
+      <h2 className={styles.heading}>Project</h2>
       <p className={styles.text}>
         ここでは自分がこれまで制作してきたアプリやサイトを紹介します。各作品のサムネイルや簡単な説明文、GitHub リンクを載せましょう。
       </p>
       <ul className={styles.workList}>
         <li className={styles.workItem}>
-          <h3>作品名 1</h3>
-          <p>Next.js を使ったポートフォリオサイト</p>
-          <Link href="https://github.com/username/project1" className={styles.link}>
+         
+         
+          {/* <Link href="https://github.com/Sonar21/ice-cream" className={styles.link}>
             GitHub リポジトリはこちら
-          </Link>
-        </li>
-        <li className={styles.workItem}>
-          <h3>作品名 2</h3>
-          <p>React + Firebase で作った TODO アプリ</p>
-          <Link href="https://github.com/username/project2" className={styles.link}>
+          </Link> */}
+          <article className={styles.hobbyItem}>
+            <Image
+              src="/images/ice-cream.png"
+              alt="趣味2"
+              width={450}
+              height={250}
+              className={styles.hobbyImage}
+            />
+            <p>アイスクリームをテーマにしたウェブサイトです。ここでは、色とりどりのフレーバー紹介からレシピ、作り方の科学的なしくみ、さらにはオリジナルフレーバー提案まで、楽しく学びながら“アイスの世界”を探究できます。鮮やかなデザインと使いやすい構成で、まるで本物のアイスパーラーにいるような気分を味わえるはずです。どうぞゆっくりご覧ください！</p>
+             <Link href="https://github.com/Sonar21/ice-cream" className={styles.link}>
             GitHub リポジトリはこちら
-          </Link>
+          </Link> 
+          
+          </article>
         </li>
-        {/* 必要に応じてリストを追加 */}
+         <li className={styles.workItem}>
+       
+ <article className={styles.hobbyItem}>
+            <Image
+              src="/images/ice-cream.png"
+              alt="趣味2"
+              width={450}
+              height={250}
+              className={styles.hobbyImage}
+            />
+            <p>アイスクリームをテーマにしたウェブサイトです。ここでは、色とりどりのフレーバー紹介からレシピ、作り方の科学的なしくみ、さらにはオリジナルフレーバー提案まで、楽しく学びながら“アイスの世界”を探究できます。鮮やかなデザインと使いやすい構成で、まるで本物のアイスパーラーにいるような気分を味わえるはずです。どうぞゆっくりご覧ください！</p>
+             <Link href="https://github.com/Sonar21/ice-cream" className={styles.link}>
+            GitHub リポジトリはこちら
+          </Link> 
+          
+          </article>
+        </li> 
+        {/* {/* 必要に応じてリストを追加  */}
       </ul>
     </main>
   );

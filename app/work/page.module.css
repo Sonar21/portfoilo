@@ -1,4 +1,4 @@
-.container {
+/* .container {
   max-width: 650px;
   margin: 2rem auto;
   padding: 1rem;
@@ -29,4 +29,99 @@
   font-size: 0.9rem;
   color: #0070f3;
   text-decoration: none;
+} */
+.container {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.workList {
+  list-style: none;
+  padding: 0;
+}
+
+.workItem {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* .link {
+  font-size: 0.9rem;
+  color: #0070f3;
+  text-decoration: none;
+} */
+/* 親リストをグリッド化 */
+.workList {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 0;
+  list-style: none;
+}
+
+/* 各カードのスタイル */
+.workItem {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.workItem:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* カード内の記事構成 */
+.hobbyItem {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.hobbyImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* カード本文 */
+.hobbyItem p {
+  flex: 1;
+  padding: 1rem;
+  line-height: 1.5;
+  
+}
+.hobbyItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 112, 243, 0.25);
+}
+/* リンクボタン */
+.link {
+
+   margin-left: auto;
+  padding: 10px;
+  background-color: #0070f3;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.link:hover {
+  background-color: #005bb5;
 }
