@@ -92,7 +92,7 @@ left: 0%;
 .navLinks.before .active-element{
   transform: rotateY(180deg);
 } */
- .navbar {
+  .navbar {
   position: absolute;
   top: 20px;
   left: 50%;
@@ -149,4 +149,4 @@ left: 0%;
 
 .navLink:hover::after {
   width: 100%;
-}
+} 

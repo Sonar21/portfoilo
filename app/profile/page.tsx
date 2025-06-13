@@ -17,7 +17,7 @@ export default function ProfilePage() {
           <p><strong>名前：</strong>ティリアウン</p>
           <p><strong>年齢：</strong>21歳</p>
           <p><strong>国籍：</strong>Myanmar</p>
-          <p>
+          <p><strong>学歴：</strong>
             専門学校沖縄ビジネス外語学院 Web プログラミングコースを専攻し、現在はエンジニアを目指して勉強中。
           </p>
         </div>
