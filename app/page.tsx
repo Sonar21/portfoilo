@@ -1,8 +1,7 @@
-// List 1 - app/page.tsx
+
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import AboutPage from "./about/page";
 import ProfilePage from "./profile/page";
@@ -12,66 +11,51 @@ import ContactPage from "./contact/page";
 import WorkPage from "./work/page";
 
 export default function HomePage() {
-  const [isSticky, setSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setSticky(window.scrollY > 80);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <main className={styles.container}>
-      <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ""}`}>
-        <ul className={styles.navList}>
-          {["about", "profile", "work", "skill", "strengths", "contact"].map(
-            (slug) => (
-              <li key={slug}>
-                <Link href={`/${slug}`} className={styles.navLink}>
-                  {slug.charAt(0).toUpperCase() + slug.slice(1)}
-                </Link>
-              </li>
-            )
-          )}
+      {/* Floating Center Navbar */}
+      <nav className={styles.floatingNav}>
+        <ul>
+          <li><Link href="#">Home</Link></li>
+          <li><Link href="#about">About</Link></li>
+          <li><Link href="#profile">Profile</Link></li>
+          <li><Link href="#work">Work</Link></li>
+          <li><Link href="#skill">Skill</Link></li>
+          <li><Link href="#strengths">Strengths</Link></li>
+          <li><Link href="#contact">Contact</Link></li>
         </ul>
       </nav>
 
-      {/* <nav className={styles.navLinks}>
-        <ul >
-          <li>
-            <Link  href="/about">About</Link>
-          </li>
-          <li>
-            <Link  href="/profile">Profile</Link>
-          </li>
-          <li>
-            <Link  href="/work">Work</Link>
-          </li>
-          <li>
-            <Link  href="/skill">Skill</Link>
-          </li>
-          <li>
-            <Link  href="/strengths">Strengths</Link>
-          </li>
-          <li>
-            <Link  href="/contact">Contant</Link>
-          </li>
-        </ul>
-      </nav>
-       */}
-
-      <Image
+      {/* Hero Image */}
+      {/* <Image
         src="/images/"
         alt="Main Visual"
         width={1200}
         height={600}
         className={styles.heroImage}
-      />
-      <AboutPage />
-      <ProfilePage />
-      <WorkPage/>
-      <SkillPage />
-      <StrengthsPage />
-      <ContactPage />
+      /> */}
+      <section className={styles.heroSection}>
+  <Image
+    src="/images/main.jpg"
+    alt="Main Visual"
+    width={1200}
+    height={600}
+    className={styles.heroImage}
+  />
+  <div className={styles.heroText}>
+    <h1>Portfolio Home</h1>
+    <p>Creative Designer & Developer</p>
+  </div>
+</section>
+
+
+      {/* Sections */}
+      <section id="about"><AboutPage /></section>
+      <section id="profile"><ProfilePage /></section>
+      <section id="work"><WorkPage /></section>
+      <section id="skill"><SkillPage /></section>
+      <section id="strengths"><StrengthsPage /></section>
+      <section id="contact"><ContactPage /></section>
     </main>
   );
 }

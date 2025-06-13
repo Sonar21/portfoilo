@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 
 export default function AboutPage() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id="about">
       <h2 className={styles.heading}>About</h2>
       <div className={styles.about}>
         <p className={styles.text}>
