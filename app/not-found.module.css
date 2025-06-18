@@ -1,0 +1,55 @@
+
+
+/* Initial state: hidden */
+.container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 840px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 5vh 5vw;
+  border-radius: var(--border-radius, 8px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0; /* Start with hidden */
+  animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Text styling */
+.text {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 0.875rem;
+  }
+
+  .container {
+    padding: 4vh 4vw;
+  }
+}
