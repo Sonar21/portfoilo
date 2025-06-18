@@ -21,6 +21,14 @@ export type Skill = {
   
 } & MicroCMSListContent;
 
+
+// news
+export type NewsItem = {
+
+  title: string;
+  description: string;
+  image: MicroCMSImage;
+};
 // Fetch skills
 export const getSkillList = async (queries?: MicroCMSQueries) => {
   return await client.getList<Skill>({
@@ -28,4 +36,15 @@ export const getSkillList = async (queries?: MicroCMSQueries) => {
     queries,
   });
 };
+// export const getNewsList =async(queries? :MicroCMSQueries) =>{
+//   return await client.getList<New>({
+//     endpoint: "news",
+//     queries,
+//   })
+// }
+export const getNewsList = async (queries?:MicroCMSQueries) =>
+  await client.getList<NewsItem>({
+    endpoint: 'news',
+    queries,
+  });
 

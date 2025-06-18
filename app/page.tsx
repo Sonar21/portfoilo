@@ -9,6 +9,7 @@ import SkillPage from "./skill/page";
 import StrengthsPage from "./strengths/page";
 import ContactPage from "./contact/page";
 import WorkPage from "./work/page";
+import NewsPage from "./news/page";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <ul>
           <li><Link href="#">Home</Link></li>
           <li><Link href="#about">About</Link></li>
+          <li><Link href="#news">News</Link></li>
           <li><Link href="#profile">Profile</Link></li>
           <li><Link href="#work">Work</Link></li>
           <li><Link href="#skill">Skill</Link></li>
@@ -51,6 +53,8 @@ export default function HomePage() {
 
       {/* Sections */}
       <section id="about"><AboutPage /></section>
+      <section id="news"><NewsPage /></section>
+
       <section id="profile"><ProfilePage /></section>
       <section id="work"><WorkPage /></section>
       <section id="skill"><SkillPage /></section>
