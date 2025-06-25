@@ -1,12 +1,9 @@
-
 /* Container for the whole page */
 .container {
- 
   max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
   text-align: center;
-  
 }
 
 /* Heading style */
@@ -28,28 +25,33 @@
   border-radius: 2px;
 }
 
-
-.about{
+/* About section layout */
+.about {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* fallback */
 }
+
 /* Paragraph text */
 .text {
+  flex: 1;
   font-size: 1.2rem;
-  justify-items: flex-start;
   line-height: 1.8;
   color: #444;
   margin-bottom: 3rem;
   padding: 0 1rem;
+  text-align: left;
 }
-/* .text:hover{
-  color: #0070f3;
-} */
 
 /* Section for image */
 .imageSection {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 /* Image styling */
@@ -63,4 +65,26 @@
 
 .image:hover {
   transform: scale(1.1);
+}
+
+/* Responsive adjustments for phone screens */
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .imageSection {
+    margin-top: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
 }

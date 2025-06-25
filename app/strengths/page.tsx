@@ -18,8 +18,7 @@ export default function StrengthsPage() {
 </h3>
 
         <p className={styles.strengthText}>
-          相手の話を最後までよく聞き、相手が本当に伝えたいポイントを引き出すことが得意です。
-          よく「聞き上手だね」と言われます。
+          相手の話を最後までしっかりと聞き、本当に伝えたいことや気持ちを引き出すのが得意です。会話の中でよく「聞き上手だね」と言われることが多く、信頼関係を築くきっかけにもなっています。
         </p>
       </section>
 
@@ -31,8 +30,8 @@ export default function StrengthsPage() {
 </h3>
 
         <p className={styles.strengthText}>
-          パズルが得意で、ボードゲームで勝つための戦略を立てるのが好きです。
-          推理小説も好んで読み、犯人を先に見抜くことが多いです。
+          パズルやボードゲームで戦略を立てて勝つことが好きで、推理小説では犯人を先に見抜くことも多いです。
+          論理的に物事を考えるのが得意で、新しい言語の習得にも積極的に取り組んでおり、短期間で基本的な会話力を身につけることができます。
         </p>
       </section>
 
@@ -43,8 +42,7 @@ export default function StrengthsPage() {
   <FaMagnifyingGlass style={{ marginRight: '8px' }} />探究心
 </h3>
         <p className={styles.strengthText}>
-          興味を持ったことや疑問に思ったことは徹底的に調べずにはいられません。
-          「蝶番の歴史を調べたら江戸時代まで遡ってしまった」など、好奇心旺盛です。
+        興味を持ったことは徹底的に調べるタイプで、「蝶番」の歴史をたどった結果、江戸時代の建築文化まで調べてしまったこともあります。この探究心が学びやスキル習得に役立っています。
         </p>
       </section>
 
@@ -55,8 +53,7 @@ export default function StrengthsPage() {
   <FaLanguage style={{ marginRight: '8px' }} /> 言語
 </h3>
         <p className={styles.strengthText}>
-          英語を日常会話レベルで話せます。さらに、○○方言の知識もあり、
-          旅行先でコミュニケーションをとるのが得意です。
+         英語を日常会話レベルで話すことができ、ミャンマー語（母語）、ヒンディー語、日本語も使えます。複数の言語と文化に触れてきた経験から、旅行先でもスムーズにコミュニケーションをとるのが得意です。
         </p>
       </section>
     </main>

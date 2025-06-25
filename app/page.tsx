@@ -45,7 +45,7 @@ export default function HomePage() {
     className={styles.heroImage}
   />
   <div className={styles.heroText}>
-    <h1>Portfolio Home</h1>
+    <h1>Welcome to My Portfolio</h1>
     <p>Creative Designer & Developer</p>
   </div>
 </section>
@@ -60,6 +60,9 @@ export default function HomePage() {
       <section id="skill"><SkillPage /></section>
       <section id="strengths"><StrengthsPage /></section>
       <section id="contact"><ContactPage /></section>
+     
+  
+      
     </main>
   );
 }

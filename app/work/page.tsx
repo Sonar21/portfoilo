@@ -26,14 +26,15 @@ export default function WorkPage() {
             />
             <p>アイスクリームをテーマにしたウェブサイトです。ここでは、色とりどりのフレーバー紹介からレシピ、作り方の科学的なしくみ、さらにはオリジナルフレーバー提案まで、楽しく学びながら“アイスの世界”を探究できます。鮮やかなデザインと使いやすい構成で、まるで本物のアイスパーラーにいるような気分を味わえるはずです。どうぞゆっくりご覧ください！</p>
              <Link href="https://github.com/Sonar21/ice-cream" className={styles.link}>
+            
             GitHub リポジトリはこちら
           </Link> 
           
           </article>
         </li>
-         <li className={styles.workItem}>
+        
        
- <article className={styles.hobbyItem}>
+ {/* <article className={styles.hobbyItem}>
             <Image
               src="/images/ice-cream.png"
               alt="趣味2"
@@ -46,8 +47,8 @@ export default function WorkPage() {
             GitHub リポジトリはこちら
           </Link> 
           
-          </article>
-        </li> 
+          </article> */}
+     
         {/* {/* 必要に応じてリストを追加  */}
       </ul>
     </main>

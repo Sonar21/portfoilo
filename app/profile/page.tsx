@@ -18,7 +18,10 @@ export default function ProfilePage() {
           <p><strong>年齢：</strong>21歳</p>
           <p><strong>国籍：</strong>Myanmar</p>
           <p><strong>学歴：</strong>
-            専門学校沖縄ビジネス外語学院 Web プログラミングコースを専攻し、現在はエンジニアを目指して勉強中。
+            専門学校沖縄ビジネス外語学院 Webプログラミングコース　在学中（エンジニア志望）
+          </p>
+          <p>
+           <strong>言語スキル：</strong>日本語,ミャンマー語,インド語,英語
           </p>
         </div>
       </section>
