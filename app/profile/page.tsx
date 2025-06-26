@@ -7,7 +7,7 @@ export default function ProfilePage() {
       <h2 className={styles.heading}>Profile</h2>
       <section className={styles.profileSection}>
         <Image
-          src="/images/my.jpg"
+          src="/images/mine.jpg"
           alt="My Profile"
           width={200}
           height={200}
