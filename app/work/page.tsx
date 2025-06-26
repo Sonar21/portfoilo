@@ -18,7 +18,7 @@ export default function WorkPage() {
           </Link> */}
           <article className={styles.hobbyItem}>
             <Image
-              src="/images/ice-cream.png"
+              src="images/ice-cream.png"
               alt="趣味2"
               width={450}
               height={250}
